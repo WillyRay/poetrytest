@@ -2,12 +2,18 @@
 name = "poetry-test"
 version = "0.1.0"
 description = ""
-authors = ["= <william.ray@hsc.utah.edu>"]
+authors = ["Willy Ray <william.ray@hsc.utah.edu>"]
 readme = "README.md"
+packages = [
+    { include = "poetry_test", from = "." }
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 requests = "^2.32.3"
+
+
+
 
 
 [build-system]
